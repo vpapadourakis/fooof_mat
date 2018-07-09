@@ -19,3 +19,6 @@ fooof_results = fooof(freqs, psd, f_range, settings);
 
 % Print out the FOOOF Results
 fooof_results
+
+% Plot FOOOF Results
+plot_one_foof_results(freqs, psd, f_range,fooof_results)
