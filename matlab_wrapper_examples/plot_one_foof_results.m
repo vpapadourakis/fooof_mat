@@ -23,7 +23,7 @@ for iG = 1:nG
     ee = (-(freqs-cf).^2)./(2*w^2);
     G(iG,:) = a*exp(ee);
 end
-sumG = sum(G); 
+sumG = sum(G,1); 
 
 %% plot
 P = L + sumG; 
