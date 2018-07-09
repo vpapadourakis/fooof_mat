@@ -22,3 +22,8 @@ fooof_results = fooof_group(freqs, psds, f_range, settings);
 
 % Check out the FOOOF Results
 fooof_results
+
+%plot
+for i = 1:size(fooof_results,2)
+    plot_one_foof_results(freqs, psds(:,i), f_range,fooof_results(i));
+end
